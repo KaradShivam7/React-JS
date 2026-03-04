@@ -2,6 +2,8 @@
 // import {Mojo,Memo} from "./Demo"
 //import Counter from "./Componets/Counter";
 import Holi from "./Componets/Useeffectdemo";
+import FetchDemo from "./Componets/FetchDemo";
+import { useState } from "react";
 
 
 function App() {
@@ -13,6 +15,12 @@ function App() {
      //      "pincode":"123456"
      // }
 
+     let[url,seturl]=useState("/get-all/{name}");
+
+     function Changeurl(){
+        seturl("/get-all-user");
+     }
+
 
      return(
           
@@ -20,8 +28,11 @@ function App() {
          {/* <Chemo></Chemo>
          <Mojo></Mojo>
          <Memo nav={nav}></Memo>
-         <Counter></Counter> */}
-         <Holi></Holi>
+         <Counter></Counter>
+         <Holi></Holi> */}
+         <h1>inside app.jsx</h1>
+         <FetchDemo url={url}></FetchDemo>
+         <button onClick={Changeurl}>change_url</button>
          </>
       
      )
