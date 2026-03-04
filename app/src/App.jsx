@@ -3,6 +3,8 @@
 //import Counter from "./Componets/Counter";
 import Holi from "./Componets/Useeffectdemo";
 import FetchDemo from "./Componets/FetchDemo";
+import First from "./Componets/first";
+import Cont from "./Componets/Context";
 import { useState } from "react";
 
 
@@ -30,9 +32,12 @@ function App() {
          <Memo nav={nav}></Memo>
          <Counter></Counter>
          <Holi></Holi> */}
-         <h1>inside app.jsx</h1>
+         {/* <h1>inside app.jsx</h1>
          <FetchDemo url={url}></FetchDemo>
-         <button onClick={Changeurl}>change_url</button>
+         <button onClick={Changeurl}>change_url</button> */}
+         <Cont.Provider value="hii from second function">
+         <First></First>
+         </Cont.Provider>
          </>
       
      )
