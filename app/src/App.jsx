@@ -1,6 +1,7 @@
 // import Chemo from "./Demo"
 // import {Mojo,Memo} from "./Demo"
-import Counter from "./Componets/Counter";
+//import Counter from "./Componets/Counter";
+import Holi from "./Componets/Useeffectdemo";
 
 
 function App() {
@@ -18,8 +19,9 @@ function App() {
          <>
          {/* <Chemo></Chemo>
          <Mojo></Mojo>
-         <Memo nav={nav}></Memo> */}
-         <Counter></Counter>
+         <Memo nav={nav}></Memo>
+         <Counter></Counter> */}
+         <Holi></Holi>
          </>
       
      )
